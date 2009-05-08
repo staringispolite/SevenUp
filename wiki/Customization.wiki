@@ -6,6 +6,7 @@ SevenUp accepts options for customization in its test() function, as well as a c
 
 The options are explained below, but here is a full 'options' hash with every variable set to their defaults, to use as a quick reference:
 
+{{{
 var options = {
   enableClosing: true,
   enableQuitBuggingMe: true,
@@ -28,6 +29,7 @@ var callback = function() {
 }
 
 sevenup.test(options, callback);
+}}}
 
 = Details =
 
@@ -36,4 +38,3 @@ By default, SevenUp allows the user to close the overlay window, for the "Suppor
 
 ===enableQuitBuggingMe===
 By default, SevenUp also allows the user to stop it from showing for a week, for your loyal but stubborn users. Setting this to false disables that functionality, making it so users see the upgrade reminder every time they view a page with SevenUp enabled.  It uses a cookie set to the domain "/" to remember users, so cookies must be enabled for this to work
-
